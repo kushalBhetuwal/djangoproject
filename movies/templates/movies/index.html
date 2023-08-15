@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <h5>My name is kushal</h5>
+        {% if movies %}
+           <ul>
+            {% for movie in movies %}
+            <li>{{movie|title}}</li>
+            {% endfor %}
+           </ul>
+        {% else %}
+          <p>No favourite movie</p>
+        {% endif %}
+    </body>
+    </html>
